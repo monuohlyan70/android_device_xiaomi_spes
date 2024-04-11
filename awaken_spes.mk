@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The awakenOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common awakenOS stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Additions
 $(call inherit-product-if-exists, vendor/gapps/common.mk)
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
 # Product Specifics
-PRODUCT_NAME := lineage_spes
+PRODUCT_NAME := awaken_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
